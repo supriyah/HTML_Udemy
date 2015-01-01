@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    		 
+    	    .large {font-size:200%}
+    		 
+    	     #padded {padding:0px;color:green}
+	 	
+	 	.lowered {position:relative;top:40px}
+	 	
+	 	.under{text-decoration:underline}
+	 	
+	 	.bold{font-weight:bold}
+	 	 
+	 	.bluebox{
+	 	     background-color:#FF0080;
+	 	     width:200px;
+	 	     height:200px;
+	 	     padding:10px;
+	 	     
+	 	 }
+	 	 
+	 	 .redbox{
+	 	     background-color:#0404B4;
+	 	     width:300px;
+	 	     height:200px;
+	 	     
+	 	 }
+	 	 
+	 	 p{
+	 	 	padding:0;
+	 	 	margin:0;
+	 	 }
+    </style>   
+</head>
+
+<body>
+	<div class="bluebox">
+		<p class="large"> This is some text.</p>
+		<p>More Text</p>
+	</div>
+	<div class="redbox">
+		<p id="padded" class="large"> This is some more text.</p>
+	</div>
+	
+	<p>The third <span class="under large bold">word</span> is underlined</p>
+    
+</body>
+</html>
