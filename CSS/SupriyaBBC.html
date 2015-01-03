@@ -23,7 +23,10 @@
     	.fixedwidth{
     		width:996px;
     		margin:0 auto; 
-      }
+            padding-top: 0px;
+            height: 90px;
+
+        }
       
     	#logodiv{
     		height:34px;
@@ -71,8 +74,8 @@
     	}
     	
     	#searchdiv input{
-    		width:140px;
-    		padding:3px 0 3px 5px;
+    		width:143px;
+    		padding:3px 8px 3px 5px;
     		height:14px;
     		border:none;
     		font-family:Arial, Helvetica, freesans, sans-serif;
@@ -89,25 +92,79 @@
     	}
     	
     	#newsbar{
-    		background-color:#990000;
+            background-image: url("Images/redbackground.png");
+            background-position: center center;
     		width:100%;
     		height:90px;
     		color:white;
-    	}
+        }
     	
     	#newsbar p{
     		margin:0;
     		padding:0;
-    	}
+            padding-top: 7px;
+            float: left;
+        }
     	
     	#newsheader{
     		font-family:"Arial, Helmet, Freesans, sans-serif";
-    		font-size:3em;
-    	}
+    		font-size:2.5em;
+        }
     	
     	#uk{
     		font-size:0.7em;
+            padding-left: 10px;
+            font-size: 28px;
     	}
+
+        #rss{
+            float: right;
+            font-weight: "Arial, Helmet, Freesans, sans-serif";
+            margin-top: 35px;
+            margin-right: 40px;
+            padding-left:5px; 
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        #rss img{
+            height: 12px;
+        }
+
+        #topicmenu{
+            padding-top: 10px;
+            z-index: 2;
+            position: relative;
+            width: 965px;
+        }
+
+        #topicmenu ul{
+            background-color: #3E0C0D;
+            padding: 0;
+            margin: 0;
+            padding: 5px 0 0 5px;
+            height: 20px;
+        }
+
+        #topicmenu li{
+            border-right:1px solid #5B2D2F;
+            list-style: none;
+            font-size: 0.8em;
+            font-style: "Arial, Helmet, Freesans, sans-serif";
+            font-weight: bold;
+            padding: 0 10px 0 10px;
+            float: left;
+        }
+
+        .selected{
+            background-color: #EDEDED;
+            color: #949494;
+            height: 20px;
+            position: relative;
+            top: -4px;
+            padding-top: 4px !important;
+            padding-bottom: 5px;
+        }
     			
     </style>   
 </head>
@@ -144,6 +201,27 @@
 		<div id="newsbar">
 			<div class="fixedwidth">
 				<p id="newsheader">NEWS<span id="uk">UK</span></p>	
+                <div id="rss">
+                    RSS <img src="Images/rss.png">
+                </div>
+                <div class="break"></div>
+                <div id="topicmenu">
+                    <ul>
+                        <li>Home</li>
+                        <li>US &#38; Canada</li>
+                        <li>Latin America</li>
+                        <li class="selected">UK</li>
+                        <li>Africa</li>
+                        <li>Asia</li>
+                        <li>Australia</li>
+                        <li>Europe</li>
+                        <li>Mid-East</li>
+                        <li>Business</li>
+                        <li>Health</li>
+                        <li>Sci/Environment</li>
+                        <li style="border-right:none">Tech</li>
+                    </ul>
+                </div>
 			</div>
 		</div>
 		<!-- Bottom Red End-->
