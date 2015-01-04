@@ -25,10 +25,14 @@
     		margin:0 auto; 
             padding-top: 0px;
             height: 90px;
-
         }
-      
-    	#logodiv{
+
+        .fixedwidth p{
+            position: relative;
+            top:16px;
+        }
+
+        #logodiv{
     		height:34px;
     		padding-top:6px;
     		float:left;
@@ -37,15 +41,14 @@
     	}
     	
     	#emptydiv{
-    		padding:10px 80px 30px 20px;
+    		padding:10px 0 30px 0;
     		border-right:1px solid #990000;
-    		width:70px;
+    		width:171px;
     		float:left;
     	}
     	
     	#topmenudiv{
     		float:left;
-    		
     	}
     	
     	#topmenudiv ul{
@@ -55,27 +58,28 @@
     	}
     	
     	#topmenudiv li{
-            opacity: 0.6;
+            color: white;
             list-style:none;
     		font-weight:bold;
     		font-size:13px;
     		font-family:arial, helvetica, sans-serif;
     		border-right:1px solid #990000;
     		height:100%;
-    		padding:13px 10px 12px 10px;
+    		padding:13px 12px 12px 12px;
     		float:left;
     	}
     	
     	#searchdiv{
-    		float:left;
+    		float:right;
     		padding-top:10px;
     		padding-left:13px;
     		padding-bottom:10px;
+            padding-right: 0px;
     	}
     	
     	#searchdiv input{
-    		width:143px;
-    		padding:3px 8px 3px 5px;
+    		width:155px;
+    		padding:3px 1px 3px 1px;
     		height:14px;
     		border:none;
     		font-family:Arial, Helvetica, freesans, sans-serif;
@@ -122,10 +126,10 @@
             float: right;
             font-weight: "Arial, Helmet, Freesans, sans-serif";
             margin-top: 35px;
-            margin-right: 40px;
             padding-left:5px; 
             font-size: 13px;
             font-weight: bold;
+            margin-left: 35px;
         }
 
         #rss img{
@@ -139,7 +143,39 @@
             width: 965px;
         }
 
+        #lowermenu{
+            color: black;
+            padding-top: 0px;
+            z-index: 2;
+            position: relative;
+            width: 965px;
+        }
+
+        #lowermenu ul{
+            width: 996px;
+            background-color: #EDEDED;
+            color: #949494;
+            padding: 0;
+            margin: 0;
+            padding: 2px 0 0 1.5px;
+            height: 20px;
+        }
+
+        #lowermenu li{
+            color: #505050;
+            position: relative;
+            left: -293px;
+            border-right:1px solid #BDBDBD;
+            list-style: none;
+            font-size: 0.75em;
+            font-style: "Arial, Helmet, Freesans, sans-serif";
+            font-weight: bold;
+            padding: 0 7px 0 7px;
+            float: left;
+        }
+
         #topicmenu ul{
+            width: 991px;
             background-color: #3E0C0D;
             padding: 0;
             margin: 0;
@@ -150,7 +186,7 @@
         #topicmenu li{
             border-right:1px solid #5B2D2F;
             list-style: none;
-            font-size: 0.8em;
+            font-size: 0.75em;
             font-style: "Arial, Helmet, Freesans, sans-serif";
             font-weight: bold;
             padding: 0 10px 0 10px;
@@ -159,7 +195,7 @@
 
         .selected{
             background-color: #EDEDED;
-            color: #949494;
+            color: #505050;
             height: 20px;
             position: relative;
             top: -4px;
@@ -225,7 +261,9 @@
             background-color:#EEEEEE;
             float: right;
             width: 340px;
+            position: relative;
             height: 210px;
+            top: -58px;
         }
 
         #watchlisten h1{
@@ -288,6 +326,18 @@
         #last{
             margin-top: .6em;
         }
+
+        hr { 
+            position: relative;
+            clear: both;
+            top: -20px;
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: 360px;
+            border:1px solid #EDEDED;
+        }
     
     </style>   
 </head>
@@ -349,6 +399,16 @@
                         <li style="border-right:none">Tech</li>
                     </ul>
                 </div>
+                <div id="lowermenu">
+                    <ul>
+                        <li>Englnad</li>
+                        <li>Northen Ireland</li>
+                        <li>Scotland</li>
+                        <li>Wales</li>
+                        <li>UK Politics</li>
+                        <li style="border-right:none">Education</li>
+                    </ul>
+                </div>
 			</div>
 		</div>
 		<!-- Bottom Red End-->
@@ -387,6 +447,7 @@
                         <a class="liveradio" href="">Radio 5 Live</a>   
                     </div>     
                 </div>
+                <hr>
             </div>
         <!-- News Content End -->
 	</div>
