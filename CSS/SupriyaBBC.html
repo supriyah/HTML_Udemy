@@ -30,7 +30,6 @@
       
     	#logodiv{
     		height:34px;
-    		
     		padding-top:6px;
     		float:left;
     		border-right:1px solid #990000;
@@ -56,7 +55,8 @@
     	}
     	
     	#topmenudiv li{
-    		list-style:none;
+            opacity: 0.6;
+            list-style:none;
     		font-weight:bold;
     		font-size:13px;
     		font-family:arial, helvetica, sans-serif;
@@ -92,6 +92,7 @@
     	}
     	
     	#newsbar{
+            z-index: -1;
             background-image: url("Images/redbackground.png");
             background-position: center center;
     		width:100%;
@@ -132,7 +133,7 @@
         }
 
         #topicmenu{
-            padding-top: 10px;
+            padding-top: 13px;
             z-index: 2;
             position: relative;
             width: 965px;
@@ -165,12 +166,136 @@
             padding-top: 4px !important;
             padding-bottom: 5px;
         }
-    			
+
+        #content{
+            width:100%;
+            color: #505050;
+            font-size: 0.85em;
+        }
+
+        h1{
+            color: #1F4F82;
+            font-weight: bold;
+            font-size: 2.4em;
+            margin-bottom: 5px;
+        }
+
+        .headimage{
+            float: left;
+        }
+
+        .newsitem{
+            position: relative;
+            left: 10px;
+            float: left;
+            width: 304px;
+            font-size: 1em;
+        }
+
+        .newsitem p{
+            text-align: justify;
+            margin-top: 5px;
+            padding-bottom: 0;
+            float: left;
+            line-height: 135%;
+        }
+
+        .newsitem a{
+            color: #6586A9;
+            text-decoration: none;
+            font-family: "Arial-regular";
+            margin-bottom: 3em;
+        }
+
+        .newsitem a:hover{
+            text-decoration: underline;
+        }
+
+        .video{
+            background-image:url("Images/arrow.png");
+            background-repeat:no-repeat;
+            background-position:left;
+            background-size:13px 11px;
+            padding-left: 19px;
+            padding-top: 5px;
+            padding-bottom: 6px;
+        }
+
+        #watchlisten{
+            background-color:#EEEEEE;
+            float: right;
+            width: 340px;
+            height: 210px;
+        }
+
+        #watchlisten h1{
+            float: left;
+            margin-left: 10px;
+            margin-top: 7px;
+            color: #5f5f5f;
+            font-size: 1.9em;
+        }
+
+        #squares{
+            float: right;
+            margin-right: 10px;
+            margin-top: 17px; 
+            width: 42px;
+            height: 8px;    
+        }
+
+        #rolling{
+            clear: both;
+        }
+
+        .arrow{
+            width:24px;
+            height: 130px;
+        }
+
+        .mainimages{
+            width: 140px;
+            height: 130px;   
+        }
+
+        #live{
+            clear: both;
+        }
+
+        .liveradio{
+            background-image:url("Images/live.png");
+            background-repeat:no-repeat;
+            background-position:left;
+            background-size:27px 12px;
+            margin-left: 2em;
+            margin-top: 3em;
+            padding:0;
+        }
+
+        #watchlisten a{
+            color: #1f4f82;
+            text-decoration: none;
+            font-family: "Arial-regular";
+            font-weight: bold;
+            padding-left: 2.5em;
+            margin-bottom: 38px;
+        }
+
+        #watchlisten a:hover{
+            text-decoration: underline;
+        }
+
+        #last{
+            margin-top: .6em;
+        }
+    
     </style>   
 </head>
 
 <body>
 	<div id="container">
+
+        <!-- Logo div-->
 		<div id="topbar">
 			<div class="fixedwidth">
 				<div id="logodiv" >
@@ -196,7 +321,9 @@
 				</div>
 			</div>
 		</div>
-		<!-- Bottom Red -->
+        <!-- Logo Div End -->
+		
+        <!-- Bottom Red -->
 		<div class="break"></div>
 		<div id="newsbar">
 			<div class="fixedwidth">
@@ -225,6 +352,43 @@
 			</div>
 		</div>
 		<!-- Bottom Red End-->
+        
+        <!-- News Content -->
+        <div class="break"></div>
+        <div id="content">
+            <div class="fixedwidth">
+                <p><span style="font-weight:bold">3 January 2015</span> Last updated at 12:12 ET</p>  
+                <h1>
+                    British Ebola nurse 'deteriorating'
+                </h1> 
+                <img class="headimage" src="Images/headimage.png"/>
+                <div class="newsitem">
+                    <p style="margin:0">UK nurse Pauline Cafferkey, who was diagnosed with Ebola after returning from Sierra Leone, is now in a critical condition, the Royal Free Hospital says.
+                    </p>
+                    <p>
+                    <a href="">Why Ebola is so dangerous</a><br />
+                    <a href="">Patient tested for Ebola at hospital</a><br />
+                    <a href="">Ebola: Mapping the outbreak</a><br />
+                    <a href="">Ebola basics: What you need to know</a><br />
+                    <a class="video" href="">How to wear an Ebola protection suit</a><br />
+                    </p>
+                </div>
+                <!-- WatchListen -->
+                <div id="watchlisten">
+                    <h1>Watch/Listen</h1>
+                    <img id="squares" src="Images/squares.png"/>
+                    <div id="rolling">
+                        <img class="arrow" src="Images/first.png"/>
+                        <img class="mainimages" src="Images/second.png">
+                        <img class="mainimages" src="Images/third.png">
+                        <img class="arrow" src="Images/forth.png"/>
+                    </div>
+                    <div id="last">
+                        <a class="liveradio" href="">Radio 5 Live</a>   
+                    </div>     
+                </div>
+            </div>
+        <!-- News Content End -->
 	</div>
 </body>
 </html>
